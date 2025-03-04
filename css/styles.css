@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+/* Header com efeito neon */
+.hero {
+    background: black;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.border-neon {
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+/* Animação de entrada */
+.animated-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-foto {
+    animation: pulse 3s infinite alternate;
+    width: 200px;
+    margin: 30px;
+
+}
+
+.btn-primary2 {
+    background-color: rgb(10, 177, 10);
+    color: white;
+
+}
+
+.btn-primary2:hover {
+    background-color: rgb(8, 207, 8);
+
+}
+
+/* Animação do título */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação da foto */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Skills estilizadas */
+.skills {
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    background: linear-gradient(45deg, #00ffff, #007bff);
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #007bff, #00ffff);
+}
+
+/* Projetos */
+.projetos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
